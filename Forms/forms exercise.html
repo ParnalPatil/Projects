@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<div>
+			<label for="first">First Name:</label>
+			<input id="first" type="text" name="firstname" placeholder="Rahul" required>
+			<label for="last">Last Name:</label>
+			<input id="last" type="text" name="lastname" placeholder="Dravid" required>
+		</div>
+
+		<div>
+			<label for="radio-choice 1">Male</label>
+			<input id="radio-choice 1" type="radio" value="male" name="r1">
+			<label for="radio-choice 2">Female</label>
+			<input id="radio-choice 2" type="radio" value="female" name="r1">
+		</div>
+
+		<div>
+			<label for="email">Email</label>
+			<input id="email" type="email" name="email" placeholder="rahul.dravid@gmail.com" required>
+			<label for="password">Password</label>
+			<input id="password" type="password" name="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+		</div>
+
+		<div>
+			<label for="birthday">Birthday:</label>
+			<select name="Month" id="birthday">
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+				<option value="Apr">Apr</option>
+				<option value="May">May</option>
+				<option value="Jun">Jun</option>
+				<option value="Jul">Jul</option>
+				<option value="Aug">Aug</option>
+				<option value="Sep">Sep</option>
+				<option value="Oct">Oct</option>
+				<option value="Nov">Nov</option>
+				<option value="Dec">Dec</option>
+			</select>
+			<select name="Day">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select name="Year">
+				<option>1996</option>
+				<option>1997</option>
+				<option>1998</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="t&c">I agree to the terms and conditions</label>
+			<input id="t&c" type="checkbox" name="T&C">
+		</div>
+		
+		<div>
+			<input type="submit" name="submit">
+		</div>
+	</form>
+
+</body>
+</html>
